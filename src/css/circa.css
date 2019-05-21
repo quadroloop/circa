@@ -11,6 +11,11 @@
   text-transform: capitalize;
 }
 
+
+hr{
+  border-width: 0.3px;
+}
+
 .m-item{
    background: linear-gradient(to right, #141e30, #243b55);
 }
@@ -28,6 +33,8 @@
   padding: 10px;
   min-height: 200px !important;  
   margin-top: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
 }
 
 .editor-btn{
