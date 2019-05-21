@@ -17,12 +17,9 @@
 </body>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/popper.min.js"></script>
-<script src="./js/socket.io.js"></script>
-<script src="./js/axios.js"></script>
+
 <script src="./js/swal.js"></script>
-<script src="./js/toastify.js"></script>
-<script src="./js/izimodal.min.js"></script>
-<script src="./js/circa.js"></script>
+
 </html> -->
 
 <head>
@@ -31,23 +28,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Trocchi&display=swap" rel="stylesheet">
-
+    <link href="./assets/circa.png" rel="icon">
+    <title>Circa</title>
     <link rel="stylesheet" href="./css/circa.css">    
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/izimodal.min.css">
+    <link rel="stylesheet" href="./css/toastify.css">
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </head>
 
 <body>
-    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large white">
+
+  <div>
+   <div class="container">
+       <h1 class="a-logo typer animated fadeIn delay-100" id="banner" data-words="Circa." data-delay="50" data-loop="1"></h1>
+       <div class="divider mb-2 animated fadeInUp delay-400" style="margin-top: -20px;margin-bottom: 5px;"></div>
+       <span id="banner-text" class="typer animated fadeInUp delay-600" data-words="Simple., Fast., Elegant., Headless CMS."  data-delay="50" data-loop="1"></span>
+       <br>
+       <br>
+
+       <div id="phome">
+
+      <span class="typer animated fadeInUp delay-800 text-muted" id="main" data-words="> You have 1 Articles and 3 categories in total."  data-delay="50" data-loop="1"></span>
+
+      <span class="cursor" data-owner="main"></span>
+
+      <br>
+      <br>
+  
+
+     <table class="table-resposive striped animated fadeInUp delay-1000">
+        <thead>
+          <tr>
+              <th>No.</th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Date Created</th>
+              <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>1</td>
+            <td>CPF Montalban Wins Stuff</td>
+            <td>News</td>
+            <td>05/12/2019</td>
+            <td><button class="btn waves-effect">edit</button></td>
+          </tr>
+         
+        </tbody>
+      </table>
+
+    </div>
+
+
+    <div class="animated fadeIn" id="peditor">
+       <input type="text" placeholder="Title">
+
+       <hr>
+       <a class="btn-floating m-item btn-small tooltipped editor-btn" data-position="top" data-tooltip="Add an Image"><i class="fa fa-image"></i></a>
+       <a class="btn-floating m-item btn-small tooltipped editor-btn" data-position="top" data-tooltip="Discard Progress"><i class="fa fa-refresh"></i></a>
+       <a class="btn-floating m-item btn-small tooltipped editor-btn" data-position="top" data-tooltip="Publish Post"><i class="fa fa-file-text-o"></i></a>
+
+
+
+       <textarea id="textField" placeholder="Write Anything here.."></textarea>
+       <center>
+          <br>
+          <br>
+       </center>
+    </div>
+
+     <div class="animated fadeIn" id="pmedia">
+        <h1>This is the media library</h1>
+    </div>
+
+     <div class="animated fadeIn" id="psettings">
+        <h1>This is the settings</h1>
+    </div>
+
+
+   </div>    
+ </div>
+
+
+
+
+
+
+    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 45px;">
+    <a class="btn-floating btn-large white waves-effect animated bounceIn">
       <span class="a-logo">C</span>
     </a>
     <ul>
-      <li><a class="btn-floating m-item"><i class="material-icons">A</i></a></li>
-      <li><a class="btn-floating m-item"><i class="material-icons">B</i></a></li>
-      <li><a class="btn-floating m-item"><i class="material-icons">C</i></a></li>
-      <li><a class="btn-floating m-item"><i class="material-icons">D</i></a></li>
+      <li id="home" onclick="nav(this)"><a class="btn-floating m-item tooltipped" data-position="top" data-tooltip="Home"><i class="fa fa-home"></i></a></li>
+      <li id="editor" onclick="nav(this)"><a class="btn-floating m-item tooltipped" data-position="top" data-tooltip="Editor"><i class="fa fa-edit"></i></a></li>
+      <li id="media" onclick="nav(this)"><a class="btn-floating m-item tooltipped" data-position="top" data-tooltip="Media Library"><i class="fa fa-image"></i></a></li>
+      <li id="settings" onclick="nav(this)"><a class="btn-floating m-item tooltipped" data-position="top" data-tooltip="Settings"><i class="fa fa-gear"></i></a></li>
     </ul>
   </div>
+
+
+
+  <script src="./js/socket.io.js"></script>
+<script src="./js/axios.js"></script>
+<script src="./js/toastify.js"></script>
+<script src="./js/izimodal.min.js"></script>
+<script src="./js/circa.js"></script>
 </body>
  

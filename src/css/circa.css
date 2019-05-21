@@ -1,15 +1,68 @@
 
+
+
+
 .a-logo{
   font-family: 'Trocchi', serif;
   font-size: 30px;
-  background: -webkit-linear-gradient(#141e30, #243b55);
+  background: -webkit-linear-gradient(#2C5364, #203A43, #0F2027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
 }
 
 .m-item{
    background: linear-gradient(to right, #141e30, #243b55);
 }
+
+.btn{
+     background: linear-gradient(to right, #141e30, #243b55);
+     font-size: 13px;
+}
+
+#peditor, #psettings, #pmedia{
+  display: none;
+}
+
+#textField{
+  padding: 10px;
+  min-height: 200px !important;  
+  margin-top: 10px;
+}
+
+.editor-btn{
+  margin-right: 15px;
+}
+
+.fa{
+  font-size: 16px !important;
+}
+
+.text-muted{
+  color: #aaa !important;
+}
+
+tr{
+  margin: 10px !important;
+}
+
+th{
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.divider{
+  padding: 2px;
+ 
+background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  transition: 0.5s;
+  width: 4px;
+}
+
+
 
 
  .animated.delay-100 {
