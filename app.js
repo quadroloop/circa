@@ -8,6 +8,7 @@ var io = require('socket.io')(http);
 var path = require('path');
 var bodyParser = require('body-parser');
 var fs = fs || require('fs');
+var open = require('open');
 
 // init lowdb
 const low = require('lowdb')
@@ -71,7 +72,12 @@ console.log("------------------------");
 console.log("listening on port: "+port);
 
 io.sockets.on('connection', function(socket) {
-// socket communications
+// socket communications fucntions
+
+  socket.on("openMedia",()=>{
+     open("./src/media");
+  })
+
 });
 
 // watch for file changes

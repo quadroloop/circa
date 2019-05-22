@@ -25,6 +25,19 @@ function focusdiv(){
 	sclass('divider')[0].style.width="200px";
 };
 
+let xpages = ["home","editor","media","manual"];
+var escsw = 0;
+document.body.onkeyup = (e) =>{
+   if(e.keyCode === 27){   
+     escsw++;
+     if(escsw === 4){
+        escsw = 0;
+     }
+
+      el(xpages[escsw]).click();
+  }
+}
+
 
 let cpage = "phome";
 
@@ -45,8 +58,8 @@ function nav(page){
    	  case 'media':
    	     el('banner-text').innerHTML = "Media Library.";
    	  break;
-   	  case 'settings':
-   	     el('banner-text').innerHTML = "Configure Circa.";
+   	  case 'manual':
+   	     el('banner-text').innerHTML = "Tips & Tricks";
    	  break;
    }
 
@@ -57,4 +70,8 @@ function nav(page){
    },500);
 }
 
+
+function manageFiles(){
+	socket.emit("openMedia");
+}
 
