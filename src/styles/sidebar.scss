@@ -1,0 +1,37 @@
+.circa-sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99;
+  padding: 10px 5px;
+  background: #282c35;
+
+  .circa-logo {
+    $size: 27px;
+    width: $size;
+    height: $size;
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: rgb(192, 190, 190);
+      margin-top: 15px;
+      transition: 0.3s;
+      padding: 0px 4px;
+      border-radius: 2px;
+
+      &:hover {
+        background: rgb(78, 77, 77);
+        color: rgb(255, 255, 255);
+        transition: 0.3s;
+      }
+    }
+  }
+}
