@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import "./styles/sidebar.scss";
+import "./styles/editor.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Editor from "./components/Editor";
 
